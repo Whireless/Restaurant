@@ -11,7 +11,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="#" aria-label="Наш логотип"></a>
-      <button class="main-nav__open-button"></button>
+      <button class="main-nav__open-button" aria-label="Меню сайта"></button>
       <ul class="main-nav__nav-list">
         <li class="main-nav__nav-item"><a href="#">О нас</a></li>
         <li class="main-nav__nav-item"><a href="#">Блюда</a></li>
@@ -20,8 +20,8 @@
       </ul>
       <div class="main-nav__reservation">
         <div class="main-nav__connect">
-          <a class="main-nav__number" href="tel:9998887654">+999-888-76-54</a><br>
-          <span>Свяжитесь с нами для бронирования</span>
+          <a class="main-nav__number" href="tel:9998887654" aria-label="Наш телефон">+999-888-76-54</a><br>
+          <span class="main-nav__feedback">Свяжитесь с нами для бронирования</span>
         </div>
         <a href="#">Заказ столика</a>
       </div>
@@ -82,7 +82,10 @@
     <section class="dishes">
       <h2 class="dishes__title">Наши <span class="contrast-text contrast-text--orange">Блюда</span></h2>
       <div class="dishes__preview">
-        <img class="dishes__pizza-img" src="" width="" height="" alt="">
+        <picture>
+          <source media="(min-width: )" srcset="">
+          <img class="dishes__pizza-img" src="" width="" height="" alt="">
+        </picture>
         <ul class="dishes__dish-list">
           <li class="dishes__dish-item">
             <p class="dishes__dish-name">Гамбургер мини 220 ₽</p>
@@ -100,19 +103,28 @@
       <h2 class="menu__title">Наше меню</h2>
       <ul class="menu__list">
         <li class="menu__item">
-          <img class="menu__img" src="" width="" height="" alt="">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="menu__img" src="" width="" height="" alt="">
+          </picture>
           <h4 class="menu__item-title">Гамбургер макси</h4>
           <span class="menu__item-desc">Максимально толстый слой мяса</span>
           <a href="#" class="menu__order">Заказать</a>
         </li>
         <li class="menu__item">
-          <img class="menu__img" src="" width="" height="" alt="">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="menu__img" src="" width="" height="" alt="">
+          </picture>
           <h4 class="menu__item-title">Гамбургер макси</h4>
           <span class="menu__item-desc">Максимально толстый слой мяса</span>
           <a href="#" class="menu__order">Заказать</a>
         </li>
         <li class="menu__item">
-          <img class="menu__img" src="" width="" height="" alt="">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="menu__img" src="" width="" height="" alt="">
+          </picture>
           <h4 class="menu__item-title">Гамбургер макси</h4>
           <span class="menu__item-desc">Максимально толстый слой мяса</span>
           <a href="#" class="menu__order">Заказать</a>
@@ -125,27 +137,75 @@
         Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки.
         Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
       </p>
-      <img src="" width="" height="" alt="">
+      <picture>
+        <source media="(min-width: )" srcset="">
+        <img src="" width="" height="" alt="">
+      </picture>
       <h4 class="reviews__status">Посетитель</h4>
       <span class="reviews__name">Николай</span>
     </div>
     <div class="gallery">
       <h2 class="gallery__title">Галерея <span class="contrast-text contrast-text--orange">Блюд</span></h2>
       <ul class="gallery__dish-list">
-        <li class="gallery__dish-item"><img src="" width="" height="" alt="" class="gallery__dish-image"></li>
-        <li class="gallery__dish-item"><img src="" width="" height="" alt="" class="gallery__dish-image"></li>
-        <li class="gallery__dish-item"><img src="" width="" height="" alt="" class="gallery__dish-image"></li>
-        <li class="gallery__dish-item"><img src="" width="" height="" alt="" class="gallery__dish-image"></li>
-        <li class="gallery__dish-item"><img src="" width="" height="" alt="" class="gallery__dish-image"></li>
-        <li class="gallery__dish-item"><img src="" width="" height="" alt="" class="gallery__dish-image"></li>
+        <li class="gallery__dish-item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="gallery__dish-image" src="" width="" height="" alt="">
+          </picture>
+        </li>
+        <li class="gallery__dish-item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="gallery__dish-image" src="" width="" height="" alt="">
+          </picture>
+        </li>
+        <li class="gallery__dish-item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="gallery__dish-image" src="" width="" height="" alt="">
+          </picture>
+        </li>
+        <li class="gallery__dish-item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="gallery__dish-image" src="" width="" height="" alt="">
+          </picture>
+        </li>
+        <li class="gallery__dish-item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="gallery__dish-image" src="" width="" height="" alt="">
+          </picture>
+        </li>
+        <li class="gallery__dish-item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="gallery__dish-image" src="" width="" height="" alt="">
+          </picture>
+        </li>
       </ul>
     </div>
     <div class="cooks">
       <h2 class="cooks__title">Наши <span class="contrast-text contrast-text--orange">Повара</span></h2>
       <ul class="cooks__list">
-        <li class="cooks__item"><img src="" width="" height="" alt=""></li>
-        <li class="cooks__item"><img src="" width="" height="" alt=""></li>
-        <li class="cooks__item"><img src="" width="" height="" alt=""></li>
+        <li class="cooks__item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="cooks__image" src="" width="" height="" alt="">
+          </picture>
+        </li>
+        <li class="cooks__item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="cooks__image" src="" width="" height="" alt="">
+          </picture>
+        </li>
+        <li class="cooks__item">
+          <picture>
+            <source media="(min-width: )" srcset="">
+            <img class="cooks__image" src="" width="" height="" alt="">
+          </picture>
+        </li>
       </ul>
     </div>
     <div class="hall"></div>
@@ -153,8 +213,8 @@
   <footer class="main-footer">
     <a href="#" class="main-footer__up">Вверх</a>
     <div class="main-footer__contacts">
-      <a class="main-nav__number" href="tel:9998887654">+999-888-76-54</a><br>
-      <span>Свяжитесь с нами для бронирования</span>
+      <a class="main-footer__number" href="tel:9998887654" aria-label="Наш телефон">+999-888-76-54</a><br>
+      <span class="main-footer__feedback">Свяжитесь с нами для бронирования</span>
     </div>
     <span class="main-footer__copyright">© Copyright</span>
   </footer>
