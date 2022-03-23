@@ -1,0 +1,99 @@
+.main-header {
+  position: relative;
+  background-image: url("../img/mobile/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/header-bg@2x.png");
+    background-size: cover;
+  }
+}
+
+.main-header__intro-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+  padding-bottom: 304px;
+}
+
+.main-header__title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  color: $orange;
+  text-align: center;
+  margin: 0;
+}
+
+.main-header__our-restaurant {
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.main-header__eat-home {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.main-header__menu-restaurant {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange;
+  width: 137px;
+  height: 47px;
+  margin-top: 45px;
+}
+
+.main-header__advantages {
+  position: absolute;
+  bottom: -780px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  z-index: 5;
+}
+
+.main-header__advantage-block {
+  position: relative;
+  text-align: center;
+  background-color: $white;
+  width: 264px;
+  height: 156px;
+  padding: 100px 13px 20px 13px;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 100px;
+    background-image: url("../img/icons/dish.svg");
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 87px;
+  }
+}
+
+.main-header__advantage-title {
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.main-header__advantage-description {
+  font-size: 20px;
+  line-height: 25px;
+  color: $grey;
+}

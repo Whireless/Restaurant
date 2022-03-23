@@ -53,11 +53,17 @@ exports.scripts = scripts;
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{png,svg,jpeg}')
+  return gulp.src('source/img/**/*.{png,svg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
 exports.optimizeImages = optimizeImages;
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{png,svg}')
+    .pipe(gulp.dest('build/img'))
+}
+exports.copyImages = copyImages;
 
 // Copy
 
@@ -129,7 +135,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
-  optimizeImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,

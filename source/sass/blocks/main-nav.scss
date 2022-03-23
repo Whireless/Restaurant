@@ -1,0 +1,119 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.main-nav__logo {
+  display: inline-block;
+  background-image: url("../img/icons/logo.svg");
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 31px;
+}
+
+.main-nav__button {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &--open {
+    width: 31px;
+    height: 18px;
+    background-image: url("../img/icons/menu.svg");
+  }
+
+  &--close {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/icons/menu-close.svg");
+  }
+}
+
+.main-nav__menu {
+  position: absolute;
+  top: 0px;
+  left: -15px;
+  right: -15px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  transform: translateY(-100%);
+  transition: 0.4s;
+  z-index: 10;
+
+  &--open {
+    transform: translateY(0);
+    transition: 0.4s;
+  }
+}
+
+.main-nav__nav-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin: 45px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__nav-link {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  transition: 0.4s;
+
+  &:hover {
+    color: $grey;
+    transition: 0.4s;
+  }
+}
+
+.main-nav__reservation {
+  margin-top: 50px;
+}
+
+.main-nav__number {
+  text-decoration: none;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.main-nav__feedback {
+  color: $grey;
+}
+
+.main-nav__order {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange;
+  width: 157px;
+  height: 47px;
+  margin-top: 15px;
+}
