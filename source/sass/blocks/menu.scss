@@ -1,0 +1,82 @@
+.menu {
+  background-image: url("../img/mobile/menu-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 62px 0 106px 0;
+}
+
+.menu__title {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+  margin: 0 0 98px 0;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 401px;
+  background-color: $white;
+  margin-top: 20px;
+  padding: 80px 35px 29px 35px;
+
+  &::before {
+    content: "Recommended";
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 18px;
+    background-color: $orange;
+    padding: 9px 15px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 28px;
+    bottom: 205px;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/icons/burger-price.svg");
+  }
+}
+
+.menu__item-title {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 18px 0 21px 0;
+}
+
+.menu__item-desc {
+  margin-bottom: 17px;
+}
+
+.menu__order {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  background-color: $orange;
+}
+
