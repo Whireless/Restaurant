@@ -1,0 +1,55 @@
+.main-footer {
+  text-align: center;
+  background-image: url("../img/mobile/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.main-footer__up {
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 138px;
+  height: 44px;
+  background-color: $orange;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    transition: $animation;
+  }
+}
+
+.main-footer__contacts {
+  margin-top: 20px;
+}
+
+.main-footer__number {
+  text-decoration: none;
+  color: $grey2;
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    color: $grey;
+    transition: $animation;
+  }
+}
+
+.main-footer__feedback {
+  display: inline-block;
+  margin: 10px 0;
+  color: $grey2;
+}
+
+.main-footer__copyright {
+  color: $grey2;
+}

@@ -54,6 +54,13 @@
   width: 137px;
   height: 47px;
   margin-top: 45px;
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    transition: $animation;
+  }
 }
 
 .main-header__advantages {
