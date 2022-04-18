@@ -8,10 +8,18 @@
 
 .main-nav__logo {
   display: inline-block;
-  background-image: url("../img/icons/logo.svg");
+  background-image: url("../img/icons/logo-mob.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   width: 45px;
   height: 31px;
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: $animation;
+  }
 }
 
 .main-nav__button {
@@ -116,4 +124,70 @@
   width: 157px;
   height: 47px;
   margin-top: 15px;
+}
+
+@media (min-width: $tabletW) {
+  .main-nav {
+    padding-top: 45px;
+  }
+
+  .main-nav__logo {
+    background-image: url("../img/icons/logo-desk.svg");
+    width: 80px;
+    height: 55px;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
+
+  .main-nav__menu {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 565px;
+    height: auto;
+    padding: 0;
+    transform: translateY(0);
+  }
+
+  .main-nav__nav-list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 277px;
+    margin: 0;
+  }
+
+  .main-nav__nav-link {
+    font-size: 13px;
+    color: $white;
+    height: auto;
+  }
+
+  .main-nav__reservation {
+    font-size: 13px;
+    margin-top: 0;
+  }
+
+  .main-nav__number {
+    color: $white;
+    position: relative;
+    margin-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -35px;
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/icons/phone.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .main-nav__order {
+    display: none;
+  }
 }
