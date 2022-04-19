@@ -82,3 +82,9 @@
     transition: $animation;
   }
 }
+
+@media (min-width: $tabletW) {
+  .story {
+    margin-top: 320px;
+  }
+}

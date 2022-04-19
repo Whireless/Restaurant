@@ -26,11 +26,11 @@
   color: $orange;
   text-align: center;
   margin: 0;
-}
 
-.main-header__our-restaurant {
-  font-size: 40px;
-  line-height: 46px;
+  &--restaurant {
+    font-size: 40px;
+    line-height: 46px;
+  }
 }
 
 .main-header__eat-home {
@@ -106,4 +106,75 @@
   font-size: 20px;
   line-height: 25px;
   color: $grey;
+}
+
+@media (min-width: $tabletW) {
+  .main-header {
+    height: 650px;
+  }
+
+  .main-header__intro-info {
+    margin-top: 160px;
+    padding-bottom: 200px;
+  }
+
+  .main-header__title {
+    font-size: 34px;
+    line-height: 42px;
+    width: 350px;
+
+    &--restaurant {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+
+  .main-header__eat-home {
+    position: relative;
+    margin-top: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -69px;
+      width: 61px;
+      height: 2px;
+      background-color: $grey3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      right: -69px;
+      width: 61px;
+      height: 2px;
+      background-color: $grey3;
+    }
+  }
+
+  .main-header__advantages {
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .main-header__advantage-block {
+    width: 190px;
+
+    &::before {
+      left: 65px;
+    }
+  }
+
+  .main-header__advantage-title {
+    font-size: 28px;
+    margin-bottom: 7px;
+  }
+
+  .main-header__advantage-description {
+    font-size: 15px;
+    line-height: 16px;
+  }
 }
