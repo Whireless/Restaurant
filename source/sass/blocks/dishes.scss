@@ -4,7 +4,7 @@
   font-weight: 400;
   text-align: center;
   width: 176px;
-  margin: 63px auto 68px auto;
+  margin: 63px auto 53px auto;
 }
 
 .dishes__dish-list {
@@ -26,7 +26,7 @@
     height: 478px;
     background-image: url("../img/mobile/pizza-bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/pizza-bg@2x.png");
@@ -67,5 +67,29 @@
   &--price {
     font-size: 23px;
     line-height: 27px;
+  }
+}
+
+@media (min-width: $tabletW) {
+  .dishes__title {
+    width: 250px;
+  }
+
+  .dishes__dish-list {
+    width: 305px;
+    margin: 125px 30px 125px auto;
+    padding: 0;
+
+    &::before {
+      top: -3px;
+      left: -398px;
+      height: 516px;
+    }
+  }
+
+  .dishes__dish-item {
+    &::before {
+      left: -145px;
+    }
   }
 }

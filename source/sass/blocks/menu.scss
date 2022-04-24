@@ -19,7 +19,11 @@
 }
 
 .menu__list {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 290px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -32,7 +36,6 @@
   width: 220px;
   height: 401px;
   background-color: $white;
-  margin-top: 20px;
   padding: 80px 35px 29px 35px;
 
   &::before {
@@ -92,3 +95,16 @@
   }
 }
 
+@media (min-width: $tabletW) {
+  .menu__list {
+    width: 340px;
+  }
+
+  .menu__item {
+    width: 270px;
+  }
+
+  .menu__order {
+    align-self: center;
+  }
+}

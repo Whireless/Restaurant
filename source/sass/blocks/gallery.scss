@@ -97,3 +97,26 @@
     }
   }
 }
+
+@media (min-width: $tabletW) {
+  .gallery__dishes-title {
+    width: 280px;
+  }
+
+  .gallery__dishes-list {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    justify-content: space-evenly;
+  }
+
+  .gallery__cooks-title {
+    width: 270px;
+  }
+
+  .gallery__cooks-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 0 45px 0;
+  }
+}
