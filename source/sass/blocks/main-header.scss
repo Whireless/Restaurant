@@ -178,3 +178,63 @@
     line-height: 16px;
   }
 }
+
+@media (min-width: $desktopW) {
+  .main-header {
+    background-image: url("../img/desktop/header-bg.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/header-bg@2x.png");
+    }
+  }
+
+  .main-header__intro-info {
+    width: 560px;
+    margin-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .main-header__title {
+    font-size: 50px;
+    line-height: 57px;
+    width: 560px;
+
+    &--restaurant {
+      font-size: 80px;
+      line-height: 90px;
+    }
+  }
+
+  .main-header__eat-home {
+    font-size: 18px;
+    line-height: 24px;
+
+    &::before,
+    &::after {
+      top: 11px;
+    }
+  }
+
+  .main-header__advantages {
+    bottom: -60px;
+  }
+
+  .main-header__advantage-block {
+    width: 290px;
+
+    &::before {
+      left: 105px;
+    }
+  }
+
+  .main-header__advantage-title {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 7px 0;
+  }
+
+  .main-header__advantage-description {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

@@ -56,10 +56,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px 15px 30px 15px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/mobile/rent-bg@2x.png");
-  }
 }
 
 .story__rent-title {
@@ -121,5 +117,11 @@
       left: auto;
       right: -450px;
     }
+  }
+}
+
+@media (min-width: $desktopW) {
+  .story {
+    margin-top: 290px;
   }
 }
