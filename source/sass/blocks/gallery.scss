@@ -120,3 +120,84 @@
     margin: 0 0 45px 0;
   }
 }
+
+@media (min-width: $desktopW) {
+  .gallery__dishes-title {
+    font-size: 54px;
+    line-height: 62px;
+    width: 368px;
+    margin: 100px auto 60px auto;
+  }
+
+  .gallery__dishes-list {
+    display: grid;
+    grid-template-columns: repeat(4, 237px);
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    justify-content: normal;
+  }
+
+  .gallery__dishes-item {
+    width: 237px;
+
+    &--wine {
+      width: 504px;
+      background-image: url("../img/desktop/wine.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop/wine@2x.png");
+      }
+
+      &:first-of-type {
+        grid-column: 1 / 3;
+      }
+
+      &:last-of-type {
+        grid-column: 3 / 5;
+      }
+    }
+  }
+
+  .gallery__cooks-title {
+    font-size: 54px;
+    line-height: 62px;
+    width: 365px;
+    margin: 100px auto;
+  }
+
+  .gallery__cooks-list {
+    justify-content: normal;
+    column-gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .gallery__cooks-item {
+    width: 320px;
+    height: 462px;
+    background-size: cover;
+
+    &--sushimaker {
+      background-image: url("../img/desktop/cook1.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop/cook1@2x.png");
+      }
+    }
+
+    &--pizzamaker {
+      background-image: url("../img/desktop/cook2.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop/cook2@2x.png");
+      }
+    }
+
+    &--confectioner {
+      background-image: url("../img/desktop/cook3.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop/cook3@2x.png");
+      }
+    }
+  }
+}

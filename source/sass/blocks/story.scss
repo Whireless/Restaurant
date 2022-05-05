@@ -122,6 +122,68 @@
 
 @media (min-width: $desktopW) {
   .story {
-    margin-top: 290px;
+    margin-top: 348px;
+  }
+
+  .story__info {
+    width: 444px;
+    margin-bottom: 182px;
+  }
+
+  .story__title {
+    font-size: 54px;
+    line-height: 62px;
+  }
+
+  .story__description {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 21px;
+    margin-bottom: 81px;
+  }
+
+  .story__statistics {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 64px;
+    margin-bottom: 0;
+
+    &::before {
+      top: -375px;
+      bottom: 0;
+      left: 437px;
+      width: 539px;
+      height: 498px;
+      background-image: url("../img/desktop/story.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop/story@2x.png");
+      }
+    }
+  }
+
+  .story__rent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 120px 104px 120px;
+  }
+
+  .story__rent-info {
+    width: 601px;
+    text-align: left;
+  }
+
+  .story__rent-title {
+    font-size: 44px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .story__rent-link {
+    width: 157px;
+    height: 47px;
+    margin: 0;
   }
 }

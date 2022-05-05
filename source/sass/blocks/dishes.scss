@@ -38,6 +38,8 @@
   text-align: center;
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-self: flex-end;
   width: 161px;
@@ -63,11 +65,11 @@
   font-size: 19px;
   line-height: 22px;
   margin: 0;
+}
 
-  &--price {
-    font-size: 23px;
-    line-height: 27px;
-  }
+.dishes__dish-price {
+  font-size: 23px;
+  line-height: 27px;
 }
 
 @media (min-width: $tabletW) {
@@ -90,6 +92,57 @@
   .dishes__dish-item {
     &::before {
       left: -145px;
+    }
+  }
+}
+
+@media (min-width: $desktopW) {
+  .dishes__title {
+    font-size: 54px;
+    line-height: 62px;
+    width: 340px;
+    margin: 132px auto 0 auto;
+  }
+
+  .dishes__dish-list {
+    row-gap: 29px;
+    width: 504px;
+    margin: 139px 120px 150px auto;
+
+    &::before {
+      left: -535px;
+      width: 445px;
+      height: 478px;
+      background-image: url("../img/desktop/pizza-bg.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop/pizza-bg@2x.png");
+      }
+    }
+  }
+
+  .dishes__dish-item {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 62%;
+    height: 140px;
+
+    &::before {
+      left: -190px;
+      width: 160px;
+      height: 140px;
+      background-image: url("../img/desktop/burger.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop/burger@2x.png");
+      }
+    }
+
+    &::after {
+      content: "------------------";
+      position: absolute;
+      top: 60px;
+      left: 155px;
     }
   }
 }

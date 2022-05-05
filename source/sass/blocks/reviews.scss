@@ -34,3 +34,18 @@
     padding: 45px 0;
   }
 }
+
+@media (min-width: $desktopW) {
+  .reviews {
+    padding: 100px 0;
+  }
+
+  .reviews__description {
+    width: 920px;
+    margin: 0 auto 20px auto;
+  }
+
+  .reviews__status {
+    margin: 16px 0 9px 0;
+  }
+}

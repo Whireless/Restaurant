@@ -29,12 +29,13 @@
 }
 
 .main-footer__contacts {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .main-footer__number {
   text-decoration: none;
   color: $grey2;
+  position: relative;
   transition: $animation;
 
   &:hover,
@@ -42,14 +43,52 @@
     color: $grey;
     transition: $animation;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icons/phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .main-footer__feedback {
   display: inline-block;
-  margin: 10px 0;
   color: $grey2;
 }
 
 .main-footer__copyright {
   color: $grey2;
+}
+
+@media (min-width: $desktopW) {
+  .main-footer {
+    background-image: url("../img/desktop/footer-bg.png");
+    padding: 80px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/footer-bg@2x.png");
+    }
+  }
+
+  .main-footer__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-footer__up {
+    margin: 0;
+  }
+
+  .main-footer__contacts {
+    margin: 0;
+  }
+
+  .main-footer__copyright {
+    align-self: flex-end;
+  }
 }
